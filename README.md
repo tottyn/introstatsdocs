@@ -1,3 +1,3 @@
-# STAT 157 at Framingham State University
+# Intro Stats Course Documents
 
-Some files for the course are here.
+Some lectures and activities for teaching introductory stats courses are hosted here.
