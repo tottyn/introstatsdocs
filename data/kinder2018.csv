@@ -1,0 +1,319 @@
+"","DistrictName","DistrictCode","KinderTotal2018"
+"1","Abby Kelley Foster Charter Public (District)",4450000,117
+"2","Abington",10000,137
+"3","Acton-Boxborough",6000000,352
+"4","Acushnet",30000,108
+"5","Adams-Cheshire",6030000,85
+"6","Agawam",50000,233
+"7","Alma del Mar Charter School (District)",4090000,50
+"8","Amesbury",70000,145
+"9","Amherst",80000,121
+"10","Andover",90000,363
+"11","Arlington",100000,522
+"12","Ashburnham-Westminster",6100000,151
+"13","Ashland",140000,202
+"14","Athol-Royalston",6150000,124
+"15","Atlantis Charter (District)",4910000,107
+"16","Attleboro",160000,425
+"17","Auburn",170000,167
+"18","Avon",180000,48
+"19","Ayer Shirley School District",6160000,142
+"20","Barnstable",200000,314
+"21","Barnstable Community Horace Mann Charter Public (District)",4270000,85
+"22","Bedford",230000,197
+"23","Belchertown",240000,158
+"24","Bellingham",250000,156
+"25","Belmont",260000,320
+"26","Benjamin Banneker Charter Public (District)",4200000,49
+"27","Benjamin Franklin Classical Charter Public (District)",4470000,50
+"28","Bentley Academy Charter School (District)",35110000,59
+"29","Berkley",270000,77
+"30","Berkshire Hills",6180000,84
+"31","Berlin",280000,27
+"32","Beverly",300000,364
+"33","Billerica",310000,353
+"34","Blackstone-Millville",6220000,129
+"35","Boston",350000,4001
+"36","Boston Renaissance Charter Public (District)",4810000,131
+"37","Bourne",360000,119
+"38","Boxford",380000,80
+"39","Boylston",390000,39
+"40","Braintree",400000,356
+"41","Brewster",410000,54
+"42","Bridge Boston Charter School (District)",4170000,39
+"43","Bridgewater-Raynham",6250000,384
+"44","Brimfield",430000,32
+"45","Brockton",440000,1261
+"46","Brooke Charter School (District)",4280000,178
+"47","Brookfield",450000,40
+"48","Brookline",460000,609
+"49","Burlington",480000,299
+"50","Cambridge",490000,646
+"51","Canton",500000,221
+"52","Carlisle",510000,63
+"53","Carver",520000,119
+"54","Central Berkshire",6350000,100
+"55","Chelmsford",560000,368
+"56","Chelsea",570000,513
+"57","Chesterfield-Goshen",6320000,19
+"58","Chicopee",610000,552
+"59","Clarksburg",630000,31
+"60","Clinton",640000,146
+"61","Codman Academy Charter Public (District)",4380000,19
+"62","Cohasset",650000,95
+"63","Collegiate Charter School of Lowell (District)",35030000,99
+"64","Community Day Charter Public School - Gateway (District)",4260000,40
+"65","Community Day Charter Public School - Prospect (District)",4400000,46
+"66","Community Day Charter Public School - R. Kingman Webster (District)",4310000,42
+"67","Concord",670000,220
+"68","Conservatory Lab Charter (District)",4390000,49
+"69","Conway",680000,13
+"70","Danvers",710000,258
+"71","Dartmouth",720000,252
+"72","Dedham",730000,173
+"73","Deerfield",740000,51
+"74","Dennis-Yarmouth",6450000,207
+"75","Dighton-Rehoboth",6500000,193
+"76","Douglas",770000,79
+"77","Dover",780000,61
+"78","Dracut",790000,313
+"79","Dudley Street Neighborhood Charter School (District)",4070000,38
+"80","Dudley-Charlton Reg",6580000,267
+"81","Duxbury",820000,173
+"82","East Bridgewater",830000,160
+"83","East Longmeadow",870000,187
+"84","Eastham",850000,24
+"85","Easthampton",860000,111
+"86","Easton",880000,243
+"87","Edgartown",890000,38
+"88","Erving",910000,11
+"89","Everett",930000,492
+"90","Fairhaven",940000,130
+"91","Fall River",950000,873
+"92","Falmouth",960000,247
+"93","Farmington River Reg",6620000,16
+"94","Fitchburg",970000,418
+"95","Florida",980000,4
+"96","Foxborough",990000,173
+"97","Foxborough Regional Charter (District)",4460000,130
+"98","Framingham",1000000,720
+"99","Franklin",1010000,307
+"100","Freetown-Lakeville",6650000,208
+"101","Gardner",1030000,205
+"102","Gateway",6720000,71
+"103","Georgetown",1050000,98
+"104","Gill-Montague",6740000,93
+"105","Gloucester",1070000,221
+"106","Grafton",1100000,217
+"107","Granby",1110000,43
+"108","Greenfield",1140000,162
+"109","Groton-Dunstable",6730000,149
+"110","Hadley",1170000,24
+"111","Halifax",1180000,94
+"112","Hamilton-Wenham",6750000,146
+"113","Hampden-Wilbraham",6800000,172
+"114","Hancock",1210000,4
+"115","Hanover",1220000,154
+"116","Harvard",1250000,64
+"117","Hatfield",1270000,20
+"118","Haverhill",1280000,524
+"119","Hawlemont",6850000,25
+"120","Hill View Montessori Charter Public (District)",4550000,36
+"121","Hilltown Cooperative Charter Public (District)",4500000,20
+"122","Hingham",1310000,289
+"123","Holbrook",1330000,95
+"124","Holland",1350000,29
+"125","Holliston",1360000,200
+"126","Holyoke",1370000,377
+"127","Holyoke Community Charter (District)",4530000,78
+"128","Hopedale",1380000,73
+"129","Hopkinton",1390000,202
+"130","Hudson",1410000,210
+"131","Hull",1420000,62
+"132","Ipswich",1440000,130
+"133","KIPP Academy Boston Charter School (District)",4630000,62
+"134","KIPP Academy Lynn Charter (District)",4290000,122
+"135","Kingston",1450000,146
+"136","Lanesborough",1480000,25
+"137","Lawrence",1490000,980
+"138","Lawrence Family Development Charter (District)",4540000,85
+"139","Lee",1500000,63
+"140","Leicester",1510000,107
+"141","Lenox",1520000,34
+"142","Leominster",1530000,404
+"143","Leverett",1540000,12
+"144","Lexington",1550000,412
+"145","Lincoln",1570000,121
+"146","Littleton",1580000,145
+"147","Longmeadow",1590000,173
+"148","Lowell",1600000,1138
+"149","Lowell Community Charter Public (District)",4560000,96
+"150","Ludlow",1610000,149
+"151","Lunenburg",1620000,109
+"152","Lynn",1630000,1166
+"153","Lynnfield",1640000,170
+"154","MATCH Charter Public School (District)",4690000,94
+"155","Malden",1650000,468
+"156","Manchester Essex Regional",6980000,76
+"157","Mansfield",1670000,223
+"158","Marblehead",1680000,187
+"159","Marion",1690000,56
+"160","Marlborough",1700000,391
+"161","Marshfield",1710000,254
+"162","Martha's Vineyard Charter (District)",4660000,15
+"163","Martin Luther King Jr. Charter School of Excellence (District)",4920000,64
+"164","Mashpee",1720000,122
+"165","Massachusetts Virtual Academy at Greenfield Commonwealth Virtual District",39010000,19
+"166","Mattapoisett",1730000,58
+"167","Maynard",1740000,121
+"168","Medfield",1750000,174
+"169","Medford",1760000,304
+"170","Medway",1770000,147
+"171","Melrose",1780000,321
+"172","Mendon-Upton",7100000,164
+"173","Methuen",1810000,484
+"174","Middleborough",1820000,232
+"175","Middleton",1840000,73
+"176","Milford",1850000,305
+"177","Millbury",1860000,127
+"178","Millis",1870000,102
+"179","Milton",1890000,353
+"180","Mohawk Trail",7170000,77
+"181","Monomoy Regional School District",7120000,145
+"182","Monson",1910000,61
+"183","Mystic Valley Regional Charter (District)",4700000,156
+"184","Nahant",1960000,13
+"185","Nantucket",1970000,118
+"186","Narragansett",7200000,101
+"187","Nashoba",7250000,206
+"188","Natick",1980000,426
+"189","Needham",1990000,404
+"190","Neighborhood House Charter (District)",4440000,38
+"191","New Bedford",2010000,1064
+"192","New Salem-Wendell",7280000,17
+"193","Newburyport",2040000,118
+"194","Newton",2070000,850
+"195","Norfolk",2080000,120
+"196","North Adams",2090000,105
+"197","North Andover",2110000,308
+"198","North Attleborough",2120000,269
+"199","North Brookfield",2150000,41
+"200","North Middlesex",7350000,210
+"201","North Reading",2170000,179
+"202","Northampton",2100000,188
+"203","Northborough",2130000,139
+"204","Northbridge",2140000,156
+"205","Norton",2180000,178
+"206","Norwell",2190000,143
+"207","Norwood",2200000,283
+"208","Oak Bluffs",2210000,29
+"209","Old Sturbridge Academy Charter Public School (District)",35150000,40
+"210","Orange",2230000,72
+"211","Orleans",2240000,37
+"212","Oxford",2260000,105
+"213","Palmer",2270000,104
+"214","Peabody",2290000,450
+"215","Pelham",2300000,16
+"216","Pembroke",2310000,182
+"217","Pentucket",7450000,162
+"218","Petersham",2340000,8
+"219","Pioneer Charter School of Science (District)",4940000,67
+"220","Pioneer Valley",7500000,60
+"221","Pioneer Valley Chinese Immersion Charter (District)",4970000,44
+"222","Pittsfield",2360000,467
+"223","Plainville",2380000,92
+"224","Plymouth",2390000,496
+"225","Plympton",2400000,30
+"226","Prospect Hill Academy Charter (District)",4870000,85
+"227","Provincetown",2420000,7
+"228","Quabbin",7530000,154
+"229","Quaboag Regional",7780000,87
+"230","Quincy",2430000,754
+"231","Randolph",2440000,232
+"232","Reading",2460000,293
+"233","Revere",2480000,577
+"234","Richmond",2490000,18
+"235","River Valley Charter (District)",4820000,32
+"236","Rochester",2500000,73
+"237","Rockland",2510000,164
+"238","Rockport",2520000,52
+"239","Rowe",2530000,8
+"240","Sabis International Charter (District)",4410000,107
+"241","Salem",2580000,287
+"242","Sandwich",2610000,164
+"243","Saugus",2620000,188
+"244","Savoy",2630000,9
+"245","Scituate",2640000,211
+"246","Seekonk",2650000,140
+"247","Seven Hills Charter Public (District)",4860000,61
+"248","Sharon",2660000,214
+"249","Sherborn",2690000,49
+"250","Shrewsbury",2710000,354
+"251","Shutesbury",2720000,11
+"252","Silver Hill Horace Mann Charter (District)",4770000,95
+"253","Somerset",2730000,168
+"254","Somerville",2740000,427
+"255","South Hadley",2780000,133
+"256","South Shore Charter Public (District)",4880000,77
+"257","Southampton",2750000,57
+"258","Southborough",2760000,130
+"259","Southbridge",2770000,166
+"260","Southern Berkshire",7650000,42
+"261","Southwick-Tolland-Granville Regional School District",7660000,102
+"262","Spencer-E Brookfield",7670000,112
+"263","Springfield",2810000,1880
+"264","Springfield Preparatory Charter School (District)",35100000,53
+"265","Stoneham",2840000,173
+"266","Stoughton",2850000,243
+"267","Sturbridge",2870000,109
+"268","Sudbury",2880000,242
+"269","Sunderland",2890000,33
+"270","Sutton",2900000,92
+"271","Swampscott",2910000,159
+"272","Swansea",2920000,157
+"273","TEC Connections Academy Commonwealth Virtual School District",39020000,37
+"274","Taunton",2930000,595
+"275","Tewksbury",2950000,234
+"276","Tisbury",2960000,24
+"277","Topsfield",2980000,82
+"278","Triton",7730000,162
+"279","Truro",3000000,15
+"280","Tyngsborough",3010000,76
+"281","UP Academy Charter School of Dorchester (District)",35050000,64
+"282","Up-Island Regional",7740000,43
+"283","Uxbridge",3040000,113
+"284","Wachusett",7750000,379
+"285","Wakefield",3050000,259
+"286","Wales",3060000,21
+"287","Walpole",3070000,260
+"288","Waltham",3080000,487
+"289","Ware",3090000,77
+"290","Wareham",3100000,222
+"291","Watertown",3140000,242
+"292","Wayland",3150000,208
+"293","Webster",3160000,140
+"294","Wellesley",3170000,338
+"295","Wellfleet",3180000,14
+"296","West Boylston",3220000,65
+"297","West Bridgewater",3230000,79
+"298","West Springfield",3320000,282
+"299","Westborough",3210000,261
+"300","Westfield",3250000,308
+"301","Westford",3260000,277
+"302","Westhampton",3270000,8
+"303","Weston",3300000,117
+"304","Westport",3310000,103
+"305","Westwood",3350000,201
+"306","Weymouth",3360000,383
+"307","Whately",3370000,17
+"308","Whitman-Hanson",7800000,247
+"309","Williamsburg",3400000,16
+"310","Williamstown",3410000,56
+"311","Wilmington",3420000,269
+"312","Winchendon",3430000,110
+"313","Winchester",3440000,304
+"314","Winthrop",3460000,146
+"315","Woburn",3470000,324
+"316","Worcester",3480000,2110
+"317","Worthington",3490000,13
+"318","Wrentham",3500000,130
