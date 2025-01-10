@@ -2,7 +2,7 @@
 library(tidyverse)
 
 # read in the dataset
-mswd <- read.csv("MiddlesexWeatherData.csv") 
+mswd <- read.csv("https://raw.githubusercontent.com/tottyn/introstatsdocs/refs/heads/main/data/MiddlesexWeatherDataALL.csv") 
 
 # data from weather stations in Middlesex County, MA for each day
 # in 2024 obtained from https://www.ncdc.noaa.gov/cdo-web/search
@@ -11,9 +11,9 @@ mswd <- read.csv("MiddlesexWeatherData.csv")
 keepstation <- mswd %>%
   mutate(anyna = apply(., 1, function(x) anyNA(x))) %>%
   group_by(STATION) %>%
-  summarize(propwithmissing = sum(anyna)/366) %>%
+  summarize(count = n(), propwithmissing = sum(anyna)/n()) %>%
   arrange(propwithmissing) %>%
-  filter(propwithmissing < 0.02) %>%
+  filter(propwithmissing < 0.05 & count > 360) %>%
   select(STATION) %>%
   flatten_chr()
 
