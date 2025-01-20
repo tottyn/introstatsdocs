@@ -1,0 +1,38 @@
+id,color,commute_time,commute_type,cat_dog,ate_breakfast,prefers_cats
+1,green,6,bus,cats,yes,1
+2,green,10,bus,dogs,yes,0
+3,green,10,bike,dogs,yes,0
+4,green,15,walk,dogs,no,0
+5,yellow,15,bus,dogs,yes,0
+6,green,30,walk,cats,no,1
+7,green,5,other,cats,yes,1
+8,green,25,bus,cats,no,1
+9,yellow,20,walk,dogs,yes,0
+10,yellow,10,walk,cats,no,1
+11,yellow,10,walk,cats,no,1
+12,green,20,bike,dogs,yes,0
+13,green,12,drove alone,dogs,no,0
+14,green,8,walk,dogs,yes,0
+15,yellow,10,bus,dogs,no,0
+16,green,15,walk,dogs,yes,0
+17,green,10,walk,dogs,yes,0
+18,green,15,walk,dogs,yes,0
+19,green,8,bike,NA,yes,0
+20,yellow,8,walk,cats,yes,1
+21,green,10,walk,cats,no,1
+22,green,5,drove alone,cats,yes,1
+23,yellow,15,walk,dogs,yes,0
+24,green,18,bus,cats,yes,1
+25,green,20,bike,dogs,yes,0
+26,yellow,15,drove with others,cats,yes,1
+27,yellow,2,walk,cats,yes,1
+28,yellow,15,drove alone,dogs,yes,0
+29,green,15,bike,dogs,no,0
+30,yellow,2,walk,NA,no,0
+31,yellow,30,walk,cats,yes,1
+32,yellow,7,bus,dogs,yes,0
+33,green,7,bus,dogs,yes,0
+34,green,28,drove alone,cats,yes,1
+35,green,30,bike,dogs,no,0
+36,yellow,10,walk,dogs,no,0
+37,yellow,10,drove with others,cats,no,1
