@@ -1,0 +1,616 @@
+---
+title: "Simpsons Paradox in COVID-19 Vaccine Data"
+author: "Your Name Goes Here"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+# load packages
+library(tidyverse)
+
+# load dataset
+ukcovid <- read.csv("uk2021coviddat.csv")
+
+```
+
+### Introduction
+
+This activity introduces an important statistical thinking mindset: before drawing conclusions from data, we should consider **how the data have been summarized, what groups are being compared, and whether important differences between those groups might affect our conclusions.**
+
+During the COVID-19 pandemic, people were frequently presented with statistics comparing outcomes among vaccinated and unvaccinated individuals. These numbers were often used to support competing claims about the effectiveness of COVID-19 vaccines. Understanding how to summarize and interpret these data was therefore especially important.
+
+The data in this activity come from a 2021 report published by Public Health England, a former executive agency of the UK's Department of Health and Social Care. The report included information about COVID-19 cases and fatalities among individuals with different vaccination statuses. For this activity, we will focus on whether there was a fatality within 28 days of a positive COVID-19 test, and we will compare individuals who had received two doses of a vaccine with those who had not.
+
+Our goal is not to determine whether the vaccine was effective based on this dataset alone. Instead, we will use the data to practice statistical thinking and see how our conclusions can change when we examine the data in different ways.
+
+## Main Question
+
+Suppose we begin by looking only at the overall data.
+
+**Based on the overall numbers, does the vaccine appear to be associated with a higher or lower rate of becoming very sick?**
+
+The data can be loaded and table of counts calculated by running the code below.
+
+```{r}
+
+table(ukcovid$outcome, ukcovid$group) %>% addmargins()
+
+```
+
+The dat object contains one row for each individual in the dataset. Each individual has three characteristics:
+
+age: whether the individual is in the younger or older age group;
+group: whether the individual is in the control or treatment group;
+outcome: whether the individual became very sick or did not become very sick.
+
+The table() function is useful when we want to count how many observations fall into each combination of categories. Since we want to calculate proportions, we first need to know the relevant counts.
+
+For example, try running:
+
+table(dat$outcome, dat$group)
+
+
+This gives us the number of people who became very sick and did not become very sick in each group.
+
+Assessing Vaccines: Control Group Sickness Rate
+
+Before comparing the two groups, let's calculate the sickness rate for each group separately.
+
+	Control	Treatment	Overall
+Sick	253	402	655
+Total	151,052	47,008	198,060
+(a)
+
+What proportion of people in the control group became very sick?
+
+To calculate a proportion, we divide the number of people with the outcome by the total number of people in the group.
+
+In this case:
+
+Proportion
+=
+Number who became sick
+Total number in group
+
+You can also use R to perform the calculation:
+
+253 / 151052
+
+
+A proportion can be converted to a percentage by multiplying by 100:
+
+253 / 151052 * 100
+
+
+Answer: __________ %
+
+\vspace{100pt}
+
+Assessing Vaccines: Treatment Group Sickness Rate
+	Control	Treatment	Overall
+Sick	253	402	655
+Total	151,052	47,008	198,060
+(b)
+
+Calculate the proportion of people in the treatment group who became very sick.
+
+Use the same process as before. Identify the number who became sick and divide it by the total number of people in the treatment group.
+
+Try calculating the proportion in R:
+
+402 / 47008
+
+
+Then convert your answer to a percentage:
+
+402 / 47008 * 100
+
+
+Answer: __________ %
+
+\vspace{100pt}
+
+Assessing Vaccines: Comparing Sickness Rates
+	Control	Treatment	Overall
+Sick	253	402	655
+Total	151,052	47,008	198,060
+(c)
+
+Which group had the higher rate of becoming very sick?
+
+What does this comparison appear to suggest about the relationship between vaccination status and becoming very sick?
+
+\vspace{100pt}
+
+Assessing Vaccines: Thinking Further
+(d)
+
+Before concluding that being in the treatment group caused people to be more likely to become very sick, what other factors might we want to consider?
+
+Think about characteristics of the people in the two groups that might differ substantially.
+
+\vspace{100pt}
+
+Assessing Vaccines: Disaggregated Data
+
+We have now discovered an important question: Are the people in the two groups similar in other important ways?
+
+One additional factor we have access to is the age of the people. Below, the data are broken down into two age groups: people younger than 50 and people age 50 and older.
+
+	Younger					Older		
+	Control	Treatment	Overall			Control	Treatment	Overall
+Sick	48	13	61		Sick	205	389	594
+Total	147,612	25,536	173,148		Total	3,440	21,472	24,912
+
+We can also ask R to produce these counts for us rather than relying on a table that has already been constructed.
+
+For example:
+
+table(dat$outcome, dat$group, dat$age)
+
+
+Notice that table() can take more than two variables. R will organize the counts according to all three variables.
+
+Assessing Vaccines: Compare Sickness Rates — Younger
+	Younger					Older		
+	Control	Treatment	Overall			Control	Treatment	Overall
+Sick	48	13	61		Sick	205	389	594
+Total	147,612	25,536	173,148		Total	3,440	21,472	24,912
+(e)
+
+Among the younger people, which group had the higher sickness rate?
+
+Calculate both proportions and convert them to percentages.
+
+You can use R to perform the arithmetic. For example:
+
+48 / 147612 * 100
+
+
+Now calculate the corresponding percentage for the treatment group.
+
+Younger control sickness rate: __________ %
+
+Younger treatment sickness rate: __________ %
+
+Which group has the higher rate? __________
+
+\vspace{100pt}
+
+Assessing Vaccines: Compare Sickness Rates — Older
+	Younger					Older		
+	Control	Treatment	Overall			Control	Treatment	Overall
+Sick	48	13	61		Sick	205	389	594
+Total	147,612	25,536	173,148		Total	3,440	21,472	24,912
+(f)
+
+Among the older people, which group had the higher sickness rate?
+
+Again, calculate both proportions and convert them to percentages.
+
+Older control sickness rate: __________ %
+
+Older treatment sickness rate: __________ %
+
+Which group has the higher rate? __________
+
+\vspace{100pt}
+
+Assessing Vaccines: Assess Representativeness
+	Younger					Older		
+	Control	Treatment	Overall			Control	Treatment	Overall
+Sick	48	13	61		Sick	205	389	594
+Total	147,612	25,536	173,148		Total	3,440	21,472	24,912
+(g)
+
+Now let's think about the composition of the two groups.
+
+What proportion of the control group was older?
+
+What proportion of the treatment group was older?
+
+Remember that we calculate a proportion by dividing the number of people in the category by the total number of people in the group.
+
+For example, to calculate the proportion of the control group that was older:
+
+3440 / 151052
+
+
+To express this as a percentage:
+
+3440 / 151052 * 100
+
+
+Now calculate the corresponding percentage for the treatment group.
+
+Percentage of control group that was older: __________ %
+
+Percentage of treatment group that was older: __________ %
+
+What do these percentages tell us about the composition of the two groups?
+
+\vspace{100pt}
+
+Assessing Vaccines: What Does It All Mean?
+(h)
+
+Review all of the proportions you calculated.
+
+The overall sickness rate for the control group was __________ %.
+The overall sickness rate for the treatment group was __________ %.
+Among younger people, the control group had a __________ sickness rate.
+Among younger people, the treatment group had a __________ sickness rate.
+Among older people, the control group had a __________ sickness rate.
+Among older people, the treatment group had a __________ sickness rate.
+
+What do you notice?
+
+How can the overall comparison between the two groups appear different from the comparisons made separately within the younger and older age groups?
+
+\vspace{150pt}
+
+Simpson's Paradox
+
+The pattern we have just observed is an example of Simpson's Paradox.
+
+Simpson's Paradox occurs when a relationship that appears in several separate groups changes, disappears, or reverses when the groups are combined.
+
+In this example, the overall data suggest one relationship between vaccination status and becoming very sick, while the age-specific data suggest a different relationship.
+
+This is a powerful reminder that a single overall percentage may not tell the whole story.
+
+The issue is especially important when comparing groups that are not similarly composed. If one group contains substantially more people from a particular age group than another group, simply comparing the overall rates can give a misleading impression of the relationship between the variables.
+
+Why Does This Matter?
+
+During the COVID-19 pandemic, statistics about cases, hospitalizations, and deaths were being reported constantly. People understandably wanted simple answers to difficult questions: Does the vaccine reduce the risk of severe illness? Is it safe? Who is most at risk?
+
+But statistical questions rarely have simple answers when the populations being compared are different. Age, health status, exposure, timing of vaccination, and many other factors can affect COVID-19 outcomes. If two groups have very different compositions, comparing their overall percentages can obscure what is happening within important subgroups.
+
+The lesson of Simpson's Paradox is therefore bigger than this particular COVID-19 dataset. Good statistical thinking means asking how a number was calculated, what populations are being compared, and whether important variables have been combined or left out. Before accepting a percentage as evidence for a conclusion, we should ask: Compared to what? For whom? And what else might explain the pattern we see?
+
+The goal is not to distrust statistics. Rather, the goal is to become better at using statistics thoughtfully.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Introduction
+
+**This activity highlights the statistical thinking mindset, where we observe several ways to quantitatively summarize data and then draw justified conclusions about a population. This was especially necessary during the years in which Covid-19 was impacting the population heavily and much conern was being expressed by the general population about the impacts of vaccines versus no vaccines.**
+
+**We have data from Public Health England, a former executive agency of the UK's Department of Health and Social Care that operated from April 2013 until October 2021. A 2021 report included the number of fatalities that occurred after contracting Covid-19, broken out by vaccination status, whether they received two doses or not.**
+
+### Main Question
+
+**Did it seem like the vaccine was effective or ineffective at preventing fatalities? The data can be loaded by running the code below.**
+
+```{r}
+
+dat <- data.frame(
+  age = c(
+    rep("Younger", 48 + 147564 + 13 + 25523),
+    rep("Older", 205 + 3235 + 389 + 21083)
+  ),
+  group = c(
+    rep("Control", 48 + 147564),
+    rep("Treatment", 13 + 25523),
+    rep("Control", 205 + 3235),
+    rep("Treatment", 389 + 21083)
+  ),
+  outcome = c(
+    rep("Very Sick", 48),
+    rep("Not Sick", 147564),
+    rep("Very Sick", 13),
+    rep("Not Sick", 25523),
+    rep("Very Sick", 205),
+    rep("Not Sick", 3235),
+    rep("Very Sick", 389),
+    rep("Not Sick", 21083)
+  )
+)
+
+table(dat$outcome, dat$group, dat$age)
+
+
+```
+
+
+
+
+
+
+
+
+
+
+## Assessing Vaccines: Control Group Sickness Rate
+
+\onehalfspacing
+
+|        | Control | Treatment | Overall |
+|--------|---------|-----------|---------|
+| Sick   | 253     | 402       | 655     |
+| Total  | 151,052 | 47,008    | 198,060 |
+
+(a) Calculate the proportion of people in the control group who became sick.
+
+\vspace{100pt}
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Assessing Vaccines: Treatment Group Sickness Rate
+
+\onehalfspacing
+
+|        | Control | Treatment | Overall |
+|--------|---------|-----------|---------|
+| Sick   | 253     | 402       | 655     |
+| Total  | 151,052 | 47,008    | 198,060 |
+
+(b) Calculate the proportion of people in the treatment group who became sick.
+
+
+\vspace{100pt}
+
+
+
+
+
+
+
+
+
+## Assessing Vaccines: Comparing Sickness Rates
+
+\onehalfspacing
+
+|        | Control | Treatment | Overall |
+|--------|---------|-----------|---------|
+| Sick   | 253     | 402       | 655     |
+| Total  | 151,052 | 47,008    | 198,060 |
+
+(c) Which group had a higher rate of sickness?
+
+
+\vspace{100pt}
+
+
+
+
+
+
+
+
+## Assessing Vaccines: Thinking Further
+
+\onehalfspacing
+
+(d) What other factors may we want to consider before concluding that the drug makes you more likely to get very sick after contracting the illness?
+
+
+\vspace{100pt}
+
+
+
+
+
+
+## Assessing Vaccines: Disaggregated Data
+
+\onehalfspacing
+
+One additional factor we have access to is the age of the people. Below is the data broken down by whether individuals were younger than 50, or 50 and older. 
+
+\footnotesize
+
+|       | **Younger** |           |          |    |       | **Older** |          |          |
+|-------|-------------|-----------|----------|----|-------|-----------|----------|----------|
+|       | Control     | Treatment | Overall  |    |       | Control   | Treatment| Overall  |
+| Sick  | 48          | 13        | 61       |    | Sick  | 205       | 389      | 594      |
+| Total | 147,612     | 25,536    | 173,148  |    | Total | 3,440     | 21,472   | 24,912   |
+
+
+
+
+
+
+
+## Assessing Vaccines: Compare Sickness Rates Younger 
+
+\onehalfspacing
+
+\footnotesize
+
+|       | **Younger** |           |          |    |       | **Older** |          |          |
+|-------|-------------|-----------|----------|----|-------|-----------|----------|----------|
+|       | Control     | Treatment | Overall  |    |       | Control   | Treatment| Overall  |
+| Sick  | 48          | 13        | 61       |    | Sick  | 205       | 389      | 594      |
+| Total | 147,612     | 25,536    | 173,148  |    | Total | 3,440     | 21,472   | 24,912   |
+
+(e) Which group (treatment or control) had a higher sickness rate amongst the younger people.
+
+
+\vspace{100pt}
+
+
+
+
+
+
+
+## Assessing Vaccines: Compare Sickness Rates Older
+
+\onehalfspacing
+
+\footnotesize
+
+|       | **Younger** |           |          |    |       | **Older** |          |          |
+|-------|-------------|-----------|----------|----|-------|-----------|----------|----------|
+|       | Control     | Treatment | Overall  |    |       | Control   | Treatment| Overall  |
+| Sick  | 48          | 13        | 61       |    | Sick  | 205       | 389      | 594      |
+| Total | 147,612     | 25,536    | 173,148  |    | Total | 3,440     | 21,472   | 24,912   |
+
+(f) Which group (treatment or control) had a higher sickness rate amongst the older people.
+
+
+\vspace{100pt}
+
+
+
+
+
+
+
+
+
+
+## Assessing Vaccines: Assess Representativeness
+
+\onehalfspacing
+
+\footnotesize
+
+|       | **Younger** |           |          |    |       | **Older** |          |          |
+|-------|-------------|-----------|----------|----|-------|-----------|----------|----------|
+|       | Control     | Treatment | Overall  |    |       | Control   | Treatment| Overall  |
+| Sick  | 48          | 13        | 61       |    | Sick  | 205       | 389      | 594      |
+| Total | 147,612     | 25,536    | 173,148  |    | Total | 3,440     | 21,472   | 24,912   |
+
+(g) Which group (treatment or control) had a higher rate of older people?
+
+
+\vspace{100pt}
+
+
+
+
+
+
+
+
+
+
+
+## Assessing Vaccines: What Does It All Mean?
+
+(h) What can we say about all the proportions we just calculated?
+
+
+
+\vspace{150pt}
+
+
+
+
+
+
+
+
+
+## Assessing Vaccines: Simpson’s Paradox
+
+\onehalfspacing
+
+- This vaccine data is an illustration of \violet{\textbf{Simpson’s Paradox}} and is based on real data from a UK report^[https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1009243/Technical_Briefing_20.pdf] from August 2021 regarding COVID vaccinations and Delta Variant fatalities. 
+  - For more information on the controversial results of the study see this article^[https://www.covid-datascience.com/post/simpson-s-paradox-strikes-again-refuting-reports-vaxxed-have-5x-case-fatality-rate-than-untaxed]. 
+  - For more examples of Simpson's Paradox see Wikipedia^[https://en.wikipedia.org/wiki/Simpson%27s_paradox] as a start.
+
+
+
+
+
+
+
+
+
+## Simpson’s Paradox
+
+\onehalfspacing
+
+- This data is an illustration of Simpson’s Paradox and is based on real data from a UK report^[https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1009243/Technical_Briefing_20.pdf] from August 2021 regarding COVID vaccinations and Delta Variant fatalities. 
+  - For more information on the controversial results of the study see this article^[https://www.covid-datascience.com/post/simpson-s-paradox-strikes-again-refuting-reports-vaxxed-have-5x-case-fatality-rate-than-untaxed]. 
+  - For more examples of Simpson's Paradox see Wikipedia^[https://en.wikipedia.org/wiki/Simpson%27s_paradox] as a start.
+  
+  
+  
