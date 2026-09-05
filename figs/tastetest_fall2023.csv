@@ -1,0 +1,21 @@
+﻿section,temp,lastmeal_lapse_mins,different,preference,cup_preference,,INSTRUCTIONS/NOTES:
+14:30,warm,30,1,orange,1,,section = time class section begins (14:30 or 12:30)
+14:30,cold,300,2,neither,1,,"temp = temperature of water (chilled or room, every other column)"
+14:30,warm,45,2,neither,1,,lastmeal_lapse_mins = How many minutes has it been since you last had something to eat? (numeric)
+14:30,cold,70,2,neither,2,,different = Which cup do you think is different? (1 or 2 or 3)
+14:30,warm,60,1,tangerine,2,,"preference = Which flavor do you prefer? Orange or Tangerine?  (same, orange, tangerine or neither)"
+14:30,cold,300,2,neither,1,,"cup_preference = Which cup did you prefer?  (0, 1, 2 or 3, 0 = none)"
+14:30,warm,150,2,same,2,,
+14:30,cold,180,3,neither,1,,
+14:30,warm,240,2,tangerine,1,,
+14:30,cold,90,2,tangerine,1,,
+14:30,warm,840,2,orange,2,,
+14:30,cold,30,2,neither,0,,
+14:30,warm,180,2,orange,1,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
